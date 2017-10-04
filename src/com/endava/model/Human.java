@@ -1,22 +1,16 @@
-package Model;
+package com.endava.model;
 
-import Enums.Status;
-import Test.Timetable;
+import com.endava.enums.Status;
 
-/**
- * Created by icebotari on 9/27/2017.
- */
 public abstract class Human {
-    String name;
-    int age;
+    private String name;
+    private int age;
+    private Status status;
 
-    Status status;
-
-    Timetable t = new Timetable();
-
-    public Human(String name, int age) {
+    public Human(String name, int age, Status status) {
         this.name = name;
         this.age = age;
+        this.status = status;
     }
 
     public void setName() {
